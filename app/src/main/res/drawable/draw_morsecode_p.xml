@@ -1,20 +1,24 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:right="38dp"
+        android:right="72dp"
         android:drawable="@drawable/draw_morsecode_tick" />
+
     <item
-        android:left="8dp"
-        android:right="23dp"
-        android:bottom="1.5dp"
-        android:top="1.5dp"
+        android:left="20dp"
+        android:right="46dp"
+        android:bottom="5dp"
+        android:top="5dp"
         android:drawable="@drawable/draw_morsecode_tack" />
+
     <item
-        android:right="8dp"
-        android:left="23dp"
-        android:bottom="1.5dp"
-        android:top="1.5dp"
+        android:right="20dp"
+        android:left="46dp"
+        android:bottom="5dp"
+        android:top="5dp"
         android:drawable="@drawable/draw_morsecode_tack" />
+
     <item
-        android:left="38dp"
+        android:left="72dp"
         android:drawable="@drawable/draw_morsecode_tick" />
+
 </layer-list>

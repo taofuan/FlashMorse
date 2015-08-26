@@ -49,6 +49,7 @@ public class MorseCodeActivity extends Activity {
             public void onClick(View view) {
                 String morsetext = etmorsetext.getText().toString();
                 items.clear();
+                //TODO clear listview
 
                 for(int i = 0, l = morsetext.length(); i < l; i++) {
                     int morsedrawid = getResources().getIdentifier("draw_morsecode_" + morsetext.charAt(i), "drawable", "net.flashmorse");
