@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#0078e7" />
+
+    <EditText
+        android:id="@+id/et_morsetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_"
+        android:layout_margin="10dp"
+        android:background="#f1f1f1"
+        android:digits="@string/input_digits"
+        android:hint="morse code"
+        android:padding="13dp" />
+
+    <Button
+        android:id="@+id/btn_textclear"
+        android:layout_below="@+id/et_morsetext"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-10dp"
+        android:textColor="#e5e5e5"
+        android:text="clear text"
+        android:textSize="13sp"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabtn_flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_morsetext"
+        android:layout_alignEnd="@+id/et_morsetext"
+        android:layout_marginTop="-45dp"
+        android:src="@mipmap/ic_play"
+        app:fabSize="normal"
+        app:backgroundTint="@android:color/white" />
+
+    <ListView
+        android:id="@+id/lv_morsetexts"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/et_morsetext"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/tv_morsetext"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/et_morsetext"
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

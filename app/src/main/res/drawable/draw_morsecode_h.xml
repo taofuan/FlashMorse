@@ -1,0 +1,16 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:right="24dp"
+        android:drawable="@drawable/draw_morsecode_tick" />
+    <item
+        android:left="8dp"
+        android:right="16dp"
+        android:drawable="@drawable/draw_morsecode_tick" />
+    <item
+        android:left="16dp"
+        android:right="8dp"
+        android:drawable="@drawable/draw_morsecode_tick" />
+    <item
+        android:left="24dp"
+        android:drawable="@drawable/draw_morsecode_tick" />
+</layer-list>
