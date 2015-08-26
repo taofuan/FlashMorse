@@ -1,20 +1,25 @@
 package net.flashmorse;
 
 import android.app.Activity;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.design.widget.FloatingActionButton;
+
+import android.graphics.Color;
+
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ImageSpan;
+
 import android.view.View;
 import android.view.ViewGroup;
+
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import android.support.design.widget.FloatingActionButton;
 
 import java.util.ArrayList;
 
@@ -60,11 +65,6 @@ public class MorseCodeActivity extends Activity {
                 lvmorsetexts.setAdapter(mListAdapter);
             }
         });
-
-
-        final ImageSpan imgspa = new ImageSpan(this, R.drawable.draw_morsecode_a);
-        final ImageSpan imgspb = new ImageSpan(this, R.drawable.draw_morsecode_b);
-
 
         btntextclear.setOnClickListener(new View.OnClickListener() {
             @Override
